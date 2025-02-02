@@ -31,7 +31,7 @@ jobs:
           git fetch --prune --unshallow
       - name: Build with Gradle
         run: cd GrappleHook-RoboRIO-Daemon && chmod +x gradlew && ./gradlew build --max-workers 1 ${{ matrix.build-options }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact-name }}
           path: GrappleHook-RoboRIO-Daemon/build/exe/
