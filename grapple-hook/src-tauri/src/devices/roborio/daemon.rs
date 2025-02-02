@@ -13,7 +13,7 @@ use crate::rpc::RpcBase;
 
 use crate::{devices::{device_manager::{DeviceManager, DeviceManagerRequest, DeviceManagerResponse}, provider::{DeviceProvider, ProviderInfo}}, codecs::tcp_can_bridge::GrappleTcpCanBridgeCodec, ssh::SSHSession};
 
-const ROBORIO_ADDRESS: &'static str = "172.22.11.2";
+const ROBORIO_ADDRESS: &'static str = "10.25.2.2";
 
 #[derive(RustEmbed)]
 #[folder="../../GrappleHook-RoboRIO-Daemon/build/exe/grappleHookRoboRioDaemon/release/"]
