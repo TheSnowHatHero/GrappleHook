@@ -89,5 +89,14 @@ jobs:
           releaseDraft: true
           prerelease: false
 
-      - name: where be the artifacts
-        run: cd grapple-hook/src-tauri/target/release/bundle/ && ls
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact-name }}
+          path: grapple-hook\src-tauri\target\release\bundle\msi
+          
+      - name: Upload 2
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact-name }}
+          path: grapple-hook\src-tauri\target\release\bundle\nsis
