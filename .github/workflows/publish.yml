@@ -92,11 +92,11 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.artifact-name }}
-          path: grapple-hook\src-tauri\target\release\bundle\msi
+          name: msi
+          path: grapple-hook\src-tauri\target\release\bundle\
           
       - name: Upload 2
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.artifact-name }}
-          path: grapple-hook\src-tauri\target\release\bundle\nsis
+          name: nsis
+          path: grapple-hook\src-tauri\target\release\bundle\
